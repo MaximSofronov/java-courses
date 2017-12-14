@@ -1,23 +1,28 @@
+/**
+* Realises Calculator
+*/
 public class Calculator {
 	private double firstArg;
 	private double secondArg;
-
 	private double result;
 
+	private String action;
+	private boolean isSaved;
+
 	public void add() {
-		this.result = firstArg + secondArg;
+		this.result = this.firstArg + this.secondArg;
 	}
 
 	public void sub() {
-		this.result = firstArg - secondArg;
+		this.result = this.firstArg - this.secondArg;
 	}
 
 	public void mul() {
-		this.result = firstArg * secondArg;
+		this.result = this.firstArg * this.secondArg;
 	}
 
 	public void div() {
-		this.result = firstArg / secondArg;
+		this.result = this.firstArg / this.secondArg;
 	}
 
 	public double getResult() {
@@ -42,6 +47,22 @@ public class Calculator {
 
 	public void setSecondArg(double arg) {
 		this.secondArg = arg;
+	}
+
+	public String getAction() {
+		return this.action;
+	}
+
+	public void setAction(String arg) {
+		this.action = arg;
+	}
+
+	public boolean getIsSaved() {
+		return this.isSaved;
+	}
+
+	public void setIsSaved(boolean arg) {
+		this.isSaved = arg;
 	}
 
 
